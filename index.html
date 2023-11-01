@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Lista de Músicas</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">DacoroMode</h1>
+    </header>
+
+    <main class="selecao-de-musicas">
+        <section class="musicas">
+            <h1 class="titulo">Selecione uma música</h1>
+            <ul class="lista-de-musicas">
+                <li class="musica selecionada" data-nome="Dacoromode" data-descricao="Descrição da Música 1">
+                    <img src="./img/card-dacoromode.jpeg" alt="Capa da Música 1">
+                </li>
+
+                <li  class="musica" data-nome="Barras" data-descricao="Descrição da Música 2">
+                    <img src="./img/card-barras.jpeg" alt="Capa da Música 2">
+                </li>
+                <li class="musica selecionada" data-nome="eu vi" data-descricao="Descrição da Música 1">
+                    <img src="./img/card-eu vi.jpeg" alt="Capa da Música 1">
+                </li>
+                <li class="musica selecionada" data-nome="mente de matuto" data-descricao="Descrição da Música 1">
+                    <img src="./img/card-mente de matuto.jpeg" alt="Capa da Música 1">
+                </li>
+                <li class="musica selecionada" data-nome="ratos e cobras" data-descricao="Descrição da Música 1">
+                    <img src="./img/card-ratos e cobras.jpeg" alt="Capa da Música 1">
+                </li>
+                <li class="musica selecionada" data-nome="sonho" data-descricao="Descrição da Música 1">
+                    <img src="./img/card-sonho.jpeg" alt="Capa da Música 1">
+                </li>
+
+                <!-- Adicione mais músicas conforme necessário -->
+            </ul>
+        </section>
+        <section class="musica-selecionada">
+            <img class="capa-musica-grande" src="" alt="Capa da Música Selecionada">
+
+            <div class="informacoes-musica">
+                <h2 class="nome-musica" id="nome-musica">Nome da Música 1</h2>
+                <p class="descricao-musica" id="descricao-musica">Descrição da Música 1</p>
+            </div>
+        </section>
+    </main>
+    <audio id="audio-player" controls style="display: none;">
+        <source src="" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
